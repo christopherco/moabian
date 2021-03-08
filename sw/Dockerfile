@@ -19,7 +19,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	udev \
 	procps \
 	iproute2 \
-
 	git \
 	openssh-client \
 	autoconf \
@@ -53,10 +52,7 @@ path-include /usr/share/locale/en*' > /etc/dpkg/dpkg.cfg.d/01_nodoc
 
 
 # 01_buildconfig
-RUN echo 'APT::Get::Assume-Yes "true";\n\
-APT::Install-Recommends "0";\n\
-APT::Install-Suggests "0";\n\
-quiet "true";' > /etc/apt/apt.conf.d/01_buildconfig
+RUN echo 'APT::Get::Assume-Yes "true";\nAPT::Install-Recommends "0";\nAPT::Install-Suggests "0";\nquiet "true";' > /etc/apt/apt.conf.d/01_buildconfig
 
 RUN mkdir -p /usr/share/man/man1
 
