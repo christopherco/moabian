@@ -44,7 +44,6 @@ opencv=(
     libgdk-pixbuf2.0-0
     libgtk-3-0
     libilmbase23
-    libjasper1
     libopenexr23
     libpango-1.0-0
     libpangocairo-1.0-0

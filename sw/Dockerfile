@@ -1,4 +1,5 @@
-FROM arm32v7/python:3.7-slim-buster
+#FROM arm32v7/python:3.7-slim-buster
+FROM arm64v8/python:3.7-slim-buster
 # From https://hub.docker.com/r/arm32v7/python 
 # Moabian uses python 3.7 Debian 10 (Buster) "slim", specifically:
 # https://github.com/docker-library/python/blob/35d8d9712c3ea4cbc4004a0e62ab61100b6fed99/3.7/buster/slim/Dockerfile
